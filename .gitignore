@@ -1,0 +1,51 @@
+# Environments
+.pixi/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Run outputs (see tbcore.paths.OUTPUT_ROOT; override with TB_OUTPUT_ROOT)
+outputs/
+*.nc
+*.parquet
+*.csv.gz
+
+# Figures are build artefacts, not sources
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.svg
+*.eps
+*.gif
+# ...except appendix figure inputs, which are sources
+!**/appendix/figures/**
+!docs/appendix_common/figures/**
+
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Test / tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Editor and OS
+.DS_Store
+~$*
